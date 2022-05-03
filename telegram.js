@@ -58,9 +58,9 @@ class SinhVienITBot {
 
     Help() {
         this.bot.onText(/\/help/, (msg, match) => {
-            let help = "/myid: get myid\n"
-            help += "/roomid: get room id\n";
-            help += "/google [từ khoá]: Google dùm các thanh niên"
+            let help = "/myid: Lấy ID Telegram của bạn\n"
+            help += "/roomid: Lấy ID Telegram của room này\n";
+            help += "/google [từ khoá]: Google dùm các thanh niên\n"
             this.bot.sendMessage(msg.chat.id, help);
         })
     }
