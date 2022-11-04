@@ -19,6 +19,7 @@ class SinhVienITBot {
 
     PollingError() {
         this.bot.on("polling_error", console.log);
+        process.exit(99);
     }
 
     ForwardMessage() {
